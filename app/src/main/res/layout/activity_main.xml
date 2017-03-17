@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbackgroung"
+    tools:context="student_database.nayan.com.studentdatabase.MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/my_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/user"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etName"
+            android:hint="Please Enter Your Name"
+            android:padding="10dp"
+            android:selectAllOnFocus="false"
+            android:elevation="1dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etId"
+            android:hint="Please Enter Your ID"
+            android:padding="10dp"/>
+
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etMobileNumber"
+            android:hint="Please Enter Your Mobile Number"
+            android:padding="10dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/etEmail"
+            android:hint="Please Enter Your Email"
+            android:padding="10dp"/>
+        <Button
+            android:text="Take Photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/take_photo"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="27dp"
+            android:textSize="16sp"
+            android:background="#7F95D1"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+
+        <Button
+            android:text="Save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btSave"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="27dp"
+            android:layout_marginRight="27dp"
+            android:textSize="16sp"
+            android:background="#7F95D1"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <Button
+            android:text="Search"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="#FF82A9"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
+            android:id="@+id/button"
+            android:textAllCaps="false"
+            android:textSize="16sp"/>
+
+        <Button
+            android:text="View"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btView"
+            android:background="#FF82A9"
+            android:textAllCaps="false"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="17dp"
+            android:layout_marginEnd="17dp"
+            android:textSize="16sp"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
